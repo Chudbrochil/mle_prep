@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "age": 25,
+    "income": 50000,
+    "approved": true
+  },
+  {
+    "id": 2,
+    "age": 35,
+    "income": 75000,
+    "approved": true
+  },
+  {
+    "id": 3,
+    "age": 22,
+    "income": 30000,
+    "approved": false
+  },
+  {
+    "id": 4,
+    "age": 45,
+    "income": 95000,
+    "approved": true
+  },
+  {
+    "id": 5,
+    "age": 28,
+    "income": 45000,
+    "approved": false
+  }
+]
