@@ -17,7 +17,7 @@ def extract_features_and_labels(data):
     labels = []
     for sample in data:
         features.append([sample['age'], sample['income']])
-        labels.append(1 if sample['approved'] else 0)
+        labels.append(1 if sample['approved'] == True else 0)
     return features, labels
 
 

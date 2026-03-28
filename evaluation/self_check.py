@@ -16,16 +16,16 @@ from pathlib import Path
 
 
 EXERCISES = {
-    1:  ("user_analytics_pipeline", "data_loader.py"),
-    2:  ("image_classifier",        "train_model.py"),
-    3:  ("gpu_training_job",        "train.py"),
-    4:  ("custom_dataloader",       "dataset.py"),
-    5:  ("large_model_training",    "train_large_model.py"),
-    6:  ("data_preprocessing",      "preprocess.py"),
-    7:  ("cnn_model",               "model.py"),
-    8:  ("training_pipeline",       "training_loop.py"),
-    9:  ("text_embedding_model",    "embedding_model.py"),
-    10: ("dataset_splitting",       "split_dataset.py"),
+    1:  ("01_user_analytics_pipeline", "data_loader.py"),
+    2:  ("02_image_classifier",        "train_model.py"),
+    3:  ("03_gpu_training_job",        "train.py"),
+    4:  ("04_custom_dataloader",       "dataset.py"),
+    5:  ("05_large_model_training",    "train_large_model.py"),
+    6:  ("06_data_preprocessing",      "preprocess.py"),
+    7:  ("07_cnn_model",               "model.py"),
+    8:  ("08_training_pipeline",       "training_loop.py"),
+    9:  ("09_text_embedding_model",    "embedding_model.py"),
+    10: ("10_dataset_splitting",       "split_dataset.py"),
 }
 
 # Strings that must appear in stdout for the exercise to be considered solved.

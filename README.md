@@ -15,23 +15,23 @@ live coding session where you run broken scripts and fix them.
 
 | # | Directory | Focus | Time target |
 |---|-----------|-------|-------------|
-| 1 | [user_analytics_pipeline](exercises/user_analytics_pipeline/) | JSON data loading | 5–7 min |
-| 2 | [image_classifier](exercises/image_classifier/) | Tensor shapes | 5–7 min |
-| 3 | [gpu_training_job](exercises/gpu_training_job/) | Dtype & device placement | 6–8 min |
-| 4 | [custom_dataloader](exercises/custom_dataloader/) | PyTorch Dataset/DataLoader | 8–10 min |
-| 5 | [large_model_training](exercises/large_model_training/) | Training loop correctness | 7–9 min |
-| 6 | [data_preprocessing](exercises/data_preprocessing/) | Normalization pipeline | 5–7 min |
-| 7 | [cnn_model](exercises/cnn_model/) | CNN architecture | 8–10 min |
-| 8 | [training_pipeline](exercises/training_pipeline/) | End-to-end training | 8–10 min |
-| 9 | [text_embedding_model](exercises/text_embedding_model/) | Embeddings & vocab | 6–8 min |
-| 10 | [dataset_splitting](exercises/dataset_splitting/) | CSV loading & train/test split | 6–8 min |
+| 1 | [01_user_analytics_pipeline](exercises/01_user_analytics_pipeline/) | JSON data loading | 5–7 min |
+| 2 | [02_image_classifier](exercises/02_image_classifier/) | Tensor shapes | 5–7 min |
+| 3 | [03_gpu_training_job](exercises/03_gpu_training_job/) | Dtype & device placement | 6–8 min |
+| 4 | [04_custom_dataloader](exercises/04_custom_dataloader/) | PyTorch Dataset/DataLoader | 8–10 min |
+| 5 | [05_large_model_training](exercises/05_large_model_training/) | Training loop correctness | 7–9 min |
+| 6 | [06_data_preprocessing](exercises/06_data_preprocessing/) | Normalization pipeline | 5–7 min |
+| 7 | [07_cnn_model](exercises/07_cnn_model/) | CNN architecture | 8–10 min |
+| 8 | [08_training_pipeline](exercises/08_training_pipeline/) | End-to-end training | 8–10 min |
+| 9 | [09_text_embedding_model](exercises/09_text_embedding_model/) | Embeddings & vocab | 6–8 min |
+| 10 | [10_dataset_splitting](exercises/10_dataset_splitting/) | CSV loading & train/test split | 6–8 min |
 
 ---
 
 ## How to work through an exercise
 
 ```bash
-cd exercises/user_analytics_pipeline
+cd exercises/01_user_analytics_pipeline
 python data_loader.py        # run it — it will fail
 # read the traceback, find the bug, fix it, re-run
 # repeat until the script exits cleanly

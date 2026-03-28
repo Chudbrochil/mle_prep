@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+# Error#1: RuntimeError: shape '[784]' is invalid for input of size 6272
+# Error#2: RuntimeError: 0D or 1D target tensor expected, multi-target not supported
 
 class SimpleNet(nn.Module):
     def __init__(self):
@@ -10,7 +12,8 @@ class SimpleNet(nn.Module):
         self.fc2 = nn.Linear(128, 10)
 
     def forward(self, x):
-        x = x.view(28 * 28)
+        print(x.shape)
+        x = x.view(x.size(0), 28 * 28) # Bug#1: We weren't multiplying by batch size.
         x = F.relu(self.fc1(x))
         return self.fc2(x)
 
@@ -25,7 +28,9 @@ def main():
     optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
 
     outputs = model(images)
-    loss = criterion(outputs, labels.unsqueeze(1))
+    print(labels)
+
+    loss = criterion(outputs, labels) # Bug#2: We didn't need to unsqueeze the labels. Just use them.
 
     optimizer.zero_grad()
     loss.backward()
